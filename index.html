@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quinta Aplicación </title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/img3.jpg','imagenes/img6.jpg','imagenes/img1777.jpg','imagenes/img23.jpg','imagenes/img32.jpg')">
+<div data-role="page" id="principal" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+ <h1>Día Mundial de la Tierra  </h1>
+ </div>
+
+<div>
+    <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">    
+    <h2> ¿Qué es el día de la tierra? </h2>
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+    <h2>Características principales de la tierra </h2>
+    </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+    <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+    <h2> Importancia de ese día </h2>
+    </a>
+    </li>
+     <li class="ui-first-child ui-last-child">
+    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+    <h2>Imágenes de mi comunidad </h2>
+    </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+    <h2> Efectos del cambio climático </h2>
+   
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+    <h2> Cuidados del medio ambiente </h2>
+   
+    </a>
+    </li>
+      <li class="ui-first-child ui-last-child">
+    <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+    <h2> ¡SORPRESA! </h2>
+    </a>
+    </li>
+    </ul>
+    </div>
+    
+    
+    <div data-role="footer" align="center" data-theme="c">
+    <div>
+    <img src="imagenes/persona_rosa.png" width="46" height="46">
+    </div>
+    <div>
+    <h4> Aplicación Cinco </h4>
+    <h4> María Guadalupe Arellano Rocha </h4>
+    </div>
+    </div>
+    </div> 
+    
+    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+    <h1> ¿Qué es el día de la Tierra? </h1>
+    </div>
+    <div data-role="content" align="center">
+    <div> 
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/img3.jpg',1)"><img src="imagenes/img2.jpg" width="222" height="228" id="Image20"></a>
+<h2>  Es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos </h2>
+    </div>
+    </div>
+    <div data-role="footer" data-theme="c" data-position="fixed" >
+    <h4> Aplicación Cinco MGAR </h4>
+    </div>
+    </div>
+    </div>
+    
+    
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> ¿Quién es la tierra? </h1>
+    </div>
+     <!-- Start WOWSlider.com -->
+<iframe src="visor1/indexvissor.html" style="width:546px;height:396px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+<div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>Características principales </h1>
+
+
+
+   <h2> 1.- Surgió hace más de 4.500 millones de años aproximadamente, junto con los demás planetas del sistema solar </h2> 
+ <h2>2.- Mide 12.713 km. de diámetro de polo a polo y 12.756 por el Ecuador </h2>
+<h2>3.- Por ello tiene forma esférica, ligeramente achatada en los polos y ensanchada en el Ecuador </h2>
+<h2>4.- La superficie terrestre es de 510 millones de Km 2 aproximadamente.</h2>
+ <h2>5.- El volúmen total de agua de la tierra se estima en 1.420 millones de Km 3 , incluyendo la contenida en ríos, lagos, hielo, océanos, atmósfera y el subsuelo. </h2>
+<h2>6.- El volumen total de la tierra es de 1.083 mil 320 millones de Km </h2>
+<h2>7.- El punto más alto de la tierra es el Monte Everest con 8.848 m. La mayor depresión es el Mar Muerto, un mar interior cuya superficie está a 399 m. bajo el nivel del mar. </h2>
+<h2>9.- Posee más de 6.000 millones de personas, la mitad de los cuales tiene menos de 25 años. </h2>
+<h2>10.- Da un giro completo alrededor del sol en 365 días, 6 horas, 9 minutos y 9 segundos (aproximadamente un año) </h2>
+<h2> 11.- Gira sobre si misma en 23 horas, 56 minutos y 4 segundos (aproximadamente un día) </h2>
+<h2>12.- Su velocidad promedio en el universo es de 30 km. por segundo. </h2>
+   </div>
+   
+   
+ 
+   <div data-role="footer" data-theme="c" data-position="fixed" >
+    <h4> Aplicación Cinco, MGAR </h4>
+    </div>
+    </div>
+   </div>
+    
+    
+     
+    
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1> Importancia de ese día </h1> 
+    </div>
+    <div data-role="content" align="center">
+    <div> 
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/img6.jpg',1)"><img src="imagenes/img4.jpg" width="226" height="223" id="Image16"></a>
+<h2>  Se instauró para crear una conciencia común a los problemas medioambientales como la superpoblación, la producción de contaminación o la conservación de la biodiversidad. Su objetivo es subrayar la importancia del uso responsable de los recursos naturales de la Tierra  así como  de una educación ambiental. </h2>
+ </div>
+    </div>
+    <div data-role="footer" data-theme="c" data-position="fixed" >
+    <h4> Aplicación Cinco, MGAR </h4>
+    </div>
+    </div>
+    </div>
+    
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1> Mi comunidad </h1> 
+    </div>
+    <div data-role="content" align="center">
+    <div> 
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/img32.jpg',1)"><img src="imagenes/img31.jpg" width="244" height="166" id="Image10"></a>
+<h2> Esta es mi comunidad, su clima aun no está tan mal, hay mucha vegetación y eso permite que esté fresco y cómodo. </h2> </div>
+    
+
+    </div>
+    <div data-role="footer" data-theme="c" data-position="fixed" >
+    <h4> Aplicación Cinco, MGAR </h4>
+    </div>
+    </div>
+    </div>
+      
+  
+    
+    
+    
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1> Efectos del cambio climático </h1> 
+    </div>
+    <div data-role="content" align="center">
+    <div> 
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/img1777.jpg',1)"><img src="imagenes/img177.jpg" width="304" height="324" id="Image13"></a>
+<div data-role="collapsible" data-content-theme="false">
+  <h1>1. Aumento del nivel del mar. </h1>
+   <h2> Cuando la temperatura de la superficie se calienta, se produce la fusión del hielo de los glaciares, del hielo marino, así como de la plataforma de hielo polar. Cuando esto sucede, aumenta la cantidad de agua que desemboca en los océanos de todo el mundo y conduce a que crezcan los niveles del mar drásticamente, poniendo en peligro numerosas ciudades que se sitúan bajo el nivel del mar. Los científicos han especulado que si se derrite a este ritmo el hielo de la Antártida y Groenlandia podría elevar los niveles del mar en más de 20 metros de aquí a 2100. </h2>
+   
+ </div>
+   
+    <div data-role="collapsible" data-content-theme="false">
+   <h1>2.Sequía </h1>
+   <h2> Las sequías se encuentran en el polo opuesto de este espectro y podemos ver que ya están causando estragos en varias partes de nuestro planeta. El planeta se está calentando y, a su vez disminuye el agua dulce, lo que lleva a malas condiciones en la agricultura. Hay una gran escasez de agua que está causando interrupciones en la producción mundial de alimentos y el hambre se está haciendo cada vez más generalizada.
+</h2>
+   <img src="imagenes/img20.jpg" width="50%" height="50%"> 
+   </div>
+     <div data-role="collapsible" data-content-theme="false">
+   <h1>3. Tormentas asesinas. </h1>
+   <h2> Cuando la temperatura de los océanos se vuelve más cálida, las tormentas son más intensas. El calentamiento global hará que las tormentas puedan llegar a ser extremadamente graves, así como su número. El agua caliente del océano alimentará la intensidad de las tormentas y dan como resultado un mayor número de huracanes extremadamente devastadores. Efectos como estos se están sintiendo ya hoy – ya hemos visto que en los últimos 30 años, la gravedad y número de ciclones, huracanes y tormentas han aumentado y se han casi duplicado. Todo esto conduce a inundaciones, pérdida de vidas, así como daños a la propiedad.</h2>
+   <img src="imagenes/img18.jpg" width="50%" height="50%"> 
+   </div>
+   
+     <div data-role="collapsible" data-content-theme="false">
+   <h1>4. Especies en extinción. </h1>
+   <h2> La desertificación, el aumento de las temperaturas de los océanos así como la deforestación está contribuyendo a los cambios desastrosos e irreversibles que se están produciendo en el hábitat y amenaza con poner en peligro a varias especies, que pronto podrían extinguirse. El oso polar pasa a ser el primer ejemplo y vemos que sus números están continuamente cayendo a medida que luchan para aclimatarse a la pérdida de hielo en las regiones del ártico. Una característica crucial para el éxito humano es la biodiversidad, y la pérdida de flora y fauna a causa de la extinción en masa que amenazan a nuestro planeta, pone en serio peligro la continuidad de la raza humana. </h2>
+   <img src="imagenes/img19.jpg" width="50%" height="50%"> 
+   </div>
+ 
+     <div data-role="collapsible" data-content-theme="false">
+   <h1>5. Desaparición de glaciares </h1>
+   <h2> En todo el mundo estamos viendo que los glaciares se están reduciendo a un ritmo alarmante.</h2>
+   <img src="imagenes/img15.jpg" width="50%" height="50%"> 
+   </div> 
+</div> 
+    </div>
+    
+    <div data-role="footer" data-theme="c" data-position="fixed" >
+    <h4> Aplicación Cinco, MGAR </h4>
+    </div>
+    </div>
+    </div>
+    
+      <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1> Cuidados al medio ambiente </h1> 
+    </div>
+    <div data-role="content" align="center">
+    <div> 
+    <h2> </h2> 
+  <!-- Start WOWSlider.com -->
+<iframe src="visor/indexvisoor.html" style="width:336px;height:250px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+    </div>
+    <a href="https://www.everydayme.com.mx/casa-y-jardin/medio-ambiente/art%C3%ADculo/12-acciones-para-el-cuidado-del-medio-ambiente"> Este enlace te llevará a una página para ver 12 acciones para cuidar el medio ambiente  </a> 
+      <div data-role="collapsible" data-content-theme="false">
+   <h1>Regla de las RRR</h1>
+   <h2> Reducir</h2>
+<h2> Si reducimos el problema, disminuimos el impacto en el medio ambiente. Los problemas de concienciación, habría que solucionarlos empezando por esta erre. La reducción puede realizarse en 2 niveles: reducción del consumo de bienes o de energía. De hecho, actualmente la producción de energía produce numerosos desechos (desechos nucleares, dióxido de carbono...). El objetivo sería: </h2>
+<h3> Reducir o eliminar la cantidad de materiales destinados a un uso único (por ejemplo, los embalajes). </h3>
+<h3>  Adaptar los aparatos en función de sus necesidades (por ejemplo poner lavadoras y lavavajillas llenos y no a media carga). </h3>
+<h3> Reducir pérdidas energéticas o de recursos: de agua, desconexión de aparatos eléctricos en stand by, conducción eficiente, desconectar transformadores, etc.</h3>
+   
+  
+  <h2> Reutilizar </h2>
+<h2> Segunda erre más importante, igualmente debido a que también reduce impacto en el medio ambiente, indirectamente. Ésta se basa en reutilizar un objeto para darle una segunda vida útil. Todos los materiales o bienes pueden tener más de una vida útil, bien sea reparándolos para un mismo uso o con imaginación para un uso diferente. </h2>
+<h3> Ejemplos: Utilizar la otra cara de las hojas impresas, rellenar botellas.
+Las botellas desechables se pueden convertir en ladrillos ecológicos, si en su interior se les ponen todas las bolsas de plástico que ya no se usan. Las cajitas o frascos de PVC, metal o plástico se pueden pintar o decorar con técnicas de decoupage y utilizarse nuevamente ahora para guardar distintos elementos. El papel usado se puede transformar en pulpa y crear nuevas hojas para escribir. </h3>
+
+<h2> Reciclar </h2>
+<h2> Ésta es una de las erres más populares debido a que el sistema de consumo actual ha preferido usar envases de materiales reciclables (plásticos y bricks, sobre todo), pero no biodegradables. De esta forma se necesita el empleo en mayor forma personal y energía en el proceso. </h2>
+
+<h3> Ejemplo: El vidrio y la mayoría de plásticos se pueden reciclar calentándolos hasta que se funden y dándoles una nueva forma. Es como utilizar algo de su principio, aunque la eficiencia no es del cien por cien en general. En el caso del vidrio en concreto, sí es completamente reciclable: de una botella se podría obtener otra botella. </h3>
+   </div> 
+</div> 
+ </div> 
+    <div data-role="footer" data-theme="c" data-position="fixed" >
+    <h4> Aplicación Cinco, MGAR </h4>
+    </div>
+    </div>
+    </div>
+    
+          <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1> ¡IMAGINA VIVIR EN UN MUNDO LIMPIO! </h1> 
+    </div>
+    <div data-role="content" align="center">
+    <div> 
+    <h2> Ahora que has leído toda la información anterior o posiblemente te has saltado hasta aquí, quiero pedirte un favor más fácil que la tarea de matemáticas... CUIDA AL PLANETA, dame la mano y vamos a darle la vuelta al mundo protegiéndolo, puedes unirte a campañas y principalmente quiero que evites tirar basura o despediciar agua.    </h2>
+    <h3>  "Puedes decir que soy un soñador, </h3> 
+        <h3>   pero no soy el único. </h3>
+           <h3> Espero que algún día te unas a nosotros, </h3> 
+           <h3> y el mundo será uno solo" </h3>
+
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image12','','imagenes/img23.jpg',1)"><img src="imagenes/img22.png" width="451" height="411" id="Image12"></a> </div>
+    <div data-role="footer" data-theme="c" data-position="fixed" >
+    <h4> Aplicación Cinco, MGAR </h4>
+    </div>
+    </div>
+    </div>
+
+</body>
+</html>
